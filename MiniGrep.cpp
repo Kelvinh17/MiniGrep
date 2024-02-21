@@ -13,7 +13,7 @@
 
 int main() {
     std::ifstream file("programacion.txt");
-    std::string word = "la";
+    std::string word = "la"; //Escoje la palabra que quieres buscar 
     std::string text;
 
     if (file.is_open()) {
@@ -25,7 +25,7 @@ int main() {
 
         size_t pos = text.find(word);
         while (pos != std::string::npos) {
-            text.replace(pos, word.length(), BLUE + word + RESET);
+            text.replace(pos, word.length(), BLUE + word + RESET); //Aqui puedes cambiar el color
             pos = text.find(word, pos + 4 + word.length());
         }
 
