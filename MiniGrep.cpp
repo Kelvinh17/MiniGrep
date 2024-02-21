@@ -2,6 +2,7 @@
 #include <fstream>
 #include <string>
 
+//Colores 
 #define RESET   "\033[0m"
 #define RED     "\033[31m"
 #define GREEN   "\033[32m"
@@ -12,7 +13,7 @@
 
 int main() {
     std::ifstream file("programacion.txt");
-    std::string word = "la"; //Escoje la palabra que quieres buscar 
+    std::string word = "programacion"; //Escoje la palabra que quieres buscar 
     std::string text;
 
     if (file.is_open()) {
